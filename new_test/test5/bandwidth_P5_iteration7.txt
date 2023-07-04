@@ -1,0 +1,1 @@
+Bandwidth for P=5, iteration 7: 70.6 Mbits/sec

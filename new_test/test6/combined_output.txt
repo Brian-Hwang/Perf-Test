@@ -1,0 +1,8 @@
+Bandwidth for P=1, iteration 1: 608 Mbits/sec
+Bandwidth for P=2, iteration 1: 639 Mbits/sec
+Bandwidth for P=3, iteration 1: 787 Mbits/sec
+Bandwidth for P=4, iteration 1: 808 Mbits/sec
+Bandwidth for P=5, iteration 1: 932 Mbits/sec
+Bandwidth for P=6, iteration 1: 980 Mbits/sec
+Bandwidth for P=7, iteration 1: 1.06 Mbits/sec
+Bandwidth for P=8, iteration 1: 1.16 Mbits/sec

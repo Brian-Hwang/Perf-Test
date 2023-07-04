@@ -1,0 +1,1 @@
+Bandwidth for P=2, iteration 9: 30.6 Mbits/sec

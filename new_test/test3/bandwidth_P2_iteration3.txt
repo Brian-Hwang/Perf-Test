@@ -1,0 +1,1 @@
+Bandwidth for P=2, iteration 3: 31.1 Mbits/sec

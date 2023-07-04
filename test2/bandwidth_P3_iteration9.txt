@@ -1,0 +1,1 @@
+Bandwidth for P=3, iteration 9: 40.0 Mbits/sec

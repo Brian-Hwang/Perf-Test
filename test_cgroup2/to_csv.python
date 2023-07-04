@@ -1,0 +1,43 @@
+import os
+import pandas as pd
+
+# Set the input file path
+input_file = "combined_output.txt"
+
+# Extract the base name and extension from the input file
+base_name = os.path.basename(input_file)
+name, ext = os.path.splitext(base_name)
+
+# Create the output file path
+output_file = os.path.join(os.getcwd(), name + ".csv")
+
+# Open the file
+with open(input_file, "r") as f:
+    lines = f.readlines()
+
+# Prepare lists to hold data
+P_values = []
+iterations = []
+bandwidths = []
+
+# Parse each line
+for line in lines:
+    parts = line.split(" ")
+    P_value = parts[3].strip(',')
+    iteration = parts[5].strip(':')
+    bandwidth = parts[6]
+
+    # Append data to lists
+    P_values.append(P_value)
+    iterations.append(iteration)
+    bandwidths.append(bandwidth)
+
+# Create a DataFrame
+df = pd.DataFrame({
+    "P_Value": P_values,
+    "Iteration": iterations,
+    "Bandwidth (Mbits/sec)": bandwidths
+})
+
+# Write DataFrame to a .csv file
+df.to_csv(output_file, index=False)

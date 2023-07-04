@@ -1,0 +1,17 @@
+Bandwidth for P=1, iteration 1: 9.05 Mbits/sec
+Bandwidth for P=1, iteration 2: 8.38 Mbits/sec
+Bandwidth for P=2, iteration 1: 13.9 Mbits/sec
+Bandwidth for P=2, iteration 2: 14.5 Mbits/sec
+Bandwidth for P=3, iteration 1: 15.8 Mbits/sec
+Bandwidth for P=3, iteration 2: 16.6 Mbits/sec
+Bandwidth for P=4, iteration 1: 6.60 Mbits/sec
+Bandwidth for P=4, iteration 2: 14.7 Mbits/sec
+Bandwidth for P=5, iteration 1: 44.3 Mbits/sec
+Bandwidth for P=5, iteration 2: 47.0 Mbits/sec
+Bandwidth for P=6, iteration 1: 41.3 Mbits/sec
+Bandwidth for P=6, iteration 2: 43.8 Mbits/sec
+Bandwidth for P=7, iteration 1: 36.1 Mbits/sec
+Bandwidth for P=7, iteration 2: 40.8 Mbits/sec
+Bandwidth for P=8, iteration 1: 42.3 Mbits/sec
+Bandwidth for P=8, iteration 2: 20.0 Mbits/sec
+Bandwidth for P=9, iteration 1: 21.6 Mbits/sec

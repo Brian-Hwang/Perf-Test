@@ -1,0 +1,1 @@
+Bandwidth for P=6, iteration 6: 59.0 Mbits/sec

@@ -1,0 +1,1 @@
+Bandwidth for P=7, iteration 10:  Mbits/sec

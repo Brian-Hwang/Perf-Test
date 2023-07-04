@@ -1,0 +1,1 @@
+Bandwidth for P=1, iteration 4: 18.2 Mbits/sec

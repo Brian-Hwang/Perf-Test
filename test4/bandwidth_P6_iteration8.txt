@@ -1,0 +1,1 @@
+Bandwidth for P=6, iteration 8: 48.0 Mbits/sec

@@ -1,0 +1,1 @@
+Bandwidth for P=3, iteration 8: 36.4 Mbits/sec

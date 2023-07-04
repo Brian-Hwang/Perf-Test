@@ -1,0 +1,1 @@
+Bandwidth for P=2, iteration 1: 639 Mbits/sec

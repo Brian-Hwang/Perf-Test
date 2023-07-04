@@ -1,0 +1,1 @@
+Bandwidth for P=8, iteration 2: 42.1 Mbits/sec
