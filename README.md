@@ -1,5 +1,3 @@
-Here's a draft for a `README.md` file for your project:
-
 ```markdown
 # Iperf Test in VMs
 
