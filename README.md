@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Iperf Test in VMs 🚀</h1>
+<h1 align="center">🚀 perf Test in VMs 🚀</h1>
 
 <p align="center">
   This project focuses on testing the network performance in Virtual Machines (VMs) using the Iperf benchmarking tool. We perform the Iperf tests in two scenarios: standalone tests, and when multiple VMs compete for resources.
