@@ -1,0 +1,12 @@
+PID 495 (kworker/15:1H-nvmet_tcp_wq), CPU Cores: [15], Average CPU Usage: 27.45%
+PID 497 (kworker/18:1H-nvmet_tcp_wq), CPU Cores: [18], Average CPU Usage: 0.00%
+PID 524 (kworker/6:1H-nvmet_tcp_wq), CPU Cores: [6], Average CPU Usage: 25.65%
+PID 530 (kworker/27:1H+nvmet_tcp_wq), CPU Cores: [27], Average CPU Usage: 38.55%
+PID 534 (kworker/47:1H-nvmet_tcp_wq), CPU Cores: [47], Average CPU Usage: 0.00%
+PID 540 (kworker/25:1H+nvmet_tcp_wq), CPU Cores: [25], Average CPU Usage: 35.40%
+PID 612 (kworker/36:1H-nvmet_tcp_wq), CPU Cores: [36], Average CPU Usage: 27.25%
+PID 613 (kworker/39:1H-nvmet_tcp_wq), CPU Cores: [39], Average CPU Usage: 0.00%
+PID 667 (kworker/12:1H-nvmet_tcp_wq), CPU Cores: [12], Average CPU Usage: 28.20%
+PID 671 (kworker/31:1H-nvmet_tcp_wq), CPU Cores: [31], Average CPU Usage: 37.90%
+PID 672 (kworker/32:1H+nvmet_tcp_wq), CPU Cores: [32], Average CPU Usage: 29.10%
+PID 3567 (nvmet_tcp_wq), CPU Cores: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], Average CPU Usage: 0.00%

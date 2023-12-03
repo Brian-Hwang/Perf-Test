@@ -1,0 +1,5 @@
+PID 671 (kworker/19:1H-kblockd), CPU Cores: [19], Average CPU Usage: 13.36%
+PID 489 (kworker/46:1H+nvmet_tcp_wq), CPU Cores: [46], Average CPU Usage: 10.30%
+PID 55093 (kworker/1:1-ice), CPU Cores: [1], Average CPU Usage: 1.47%
+PID 55662 (kworker/7:0-mm_percpu_wq), CPU Cores: [7], Average CPU Usage: 1.00%
+PID 56043 (kworker/u112:3-iavf), CPU Cores: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], Average CPU Usage: 1.00%
