@@ -23,7 +23,7 @@ def run_stress_command(duration, taskset_cores, vm_number, vm_bytes, numa):
     Runs the stress command with specified parameters using numactl if numa is set, otherwise uses taskset.
     """
     if numa != -1:  # Check if numa option is set
-        cmd = f"numactl -C {taskset_cores} -N {numa} -m {numa} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
+        cmd = f"numactl -C {taskset_cores} -N {numa} -m {numa} taskset -c {taskset_cores} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
     else:
         cmd = f"taskset -c {taskset_cores} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
     
