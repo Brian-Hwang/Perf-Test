@@ -8,7 +8,6 @@
 #Without NUMA:
 # python memory_stress_test.py -d 30 -s 10 -t 5 -c "0-3" -v 2 -b 25600
 
-
 # Caution!
 # The given taskset core for the python script will not match the core given for the "Stress" memory benchmark
 # Thus, designate wanted NUMA CPU Number and Cores with the options provided
@@ -36,7 +35,6 @@ def run_stress_command(duration, taskset_cores, vm_number, vm_bytes, numa):
         print("Error:")
         print(result.stderr)
 
-
 def get_memory_usage():
     """
     Returns the current memory usage in bytes.
@@ -47,12 +45,21 @@ def get_memory_usage():
 def average_memory_usage(interval, duration, usage_data):
     """
     Calculates the average memory usage over a given duration and interval.
+    Adjusts sleep intervals for more accurate timing.
     """
-    time_elapsed = 0
-    while time_elapsed < duration:
+    start_time = time.time()
+    while (time.time() - start_time) < duration:
+        measure_start = time.time()
+        
         usage_data.append(get_memory_usage())
-        time.sleep(interval)
-        time_elapsed += interval
+        
+        measure_end = time.time()
+        measure_duration = measure_end - measure_start
+        time_to_sleep = max(0, interval - measure_duration)
+        
+        time.sleep(time_to_sleep)
+
+
 
 def write_to_csv(file_name, data):
     """
