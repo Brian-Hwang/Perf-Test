@@ -6,7 +6,7 @@
 # taskset -c 0 python3 multi_ContentionAndUsage.py -o 30 -s 10 -t 5 -c "0-3" -v 2 -b 1024 -n 1 -d 30 
 
 # Caution!
-# The given taskset core will not match the core given for the "Stress" memory benchmark
+# The given taskset core for the python script will not match the core given for the "Stress" memory benchmark
 # Thus, designate wanted NUMA CPU Number and Cores with the options provided
 
 import argparse
