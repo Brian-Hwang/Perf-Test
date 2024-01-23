@@ -20,9 +20,13 @@ from tqdm import tqdm
 
 def run_stress_command(duration, taskset_cores, vm_number, vm_bytes, numa):
     """
-    Runs the stress command with specified parameters using numactl and prints the output.
+    Runs the stress command with specified parameters using numactl if numa is set, otherwise uses taskset.
     """
-    cmd = f"numactl -C {taskset_cores} -N {numa} -m {numa} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
+    if numa != -1:  # Check if numa option is set
+        cmd = f"numactl -C {taskset_cores} -N {numa} -m {numa} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
+    else:
+        cmd = f"taskset -c {taskset_cores} stress --vm {vm_number} --vm-bytes {vm_bytes}M --timeout {duration}s"
+    
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if result.stderr:
         print("Error:")
@@ -68,7 +72,8 @@ def parse_arguments():
     parser.add_argument('-c', '--taskset_cores', default='50-53', help='CPU cores to use for the stress test (e.g., "50-53"). Default: "50-53"')
     parser.add_argument('-v', '--vm_number', type=int, default=4, help='Number of VM workers for stress test. Default: 4')
     parser.add_argument('-b', '--vm_bytes', type=int, default=256*100, help='Memory for each VM worker (in MB). Default: 25600')
-    parser.add_argument('-n', '--numa', type=int, default=0, help='NUMA node and memory number. Default: 0')
+    parser.add_argument('-n', '--numa', type=int, default=-1, help='NUMA node and memory number. Set to -1 to disable. Default: -1')
+
     return parser.parse_args()
 
 def main():
