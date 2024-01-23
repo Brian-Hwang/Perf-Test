@@ -37,7 +37,7 @@ def main():
     measurements = []
     interval = 1  # seconds
     duration = 30  # seconds
-    total_measurements = 7  # number of times to measure
+    total_measurements = 2  # number of times to measure
     total_cycle_time = 40  # Total time for each cycle in seconds
 
     for _ in range(total_measurements):
