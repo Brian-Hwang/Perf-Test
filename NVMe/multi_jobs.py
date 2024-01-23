@@ -33,6 +33,7 @@ filename=/mnt/{file_path_option}/1g_file_{i}'''
             job_count += 1
 
     full_config = base_config + '\n\n'.join(job_configs)
+    print(full_config)
     return full_config
 
 def run_fio(num_jobs, file_path_options, converged, bs, iodepth):
