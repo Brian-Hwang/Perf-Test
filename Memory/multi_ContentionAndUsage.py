@@ -95,7 +95,7 @@ def main():
     with tqdm(total=args.total_iterations + 1, desc="Baseline", unit="iteration") as pbar:
         # Baseline measurement without stress
         usage_data = []
-        average_memory_usage(1, args.operation_duration, usage_data)
+        average_memory_usage(1, 1, usage_data)
         avg_memory_usage = sum(usage_data) / len(usage_data)
         memory_measurements.append(("Baseline", avg_memory_usage))
         pbar.update(1)

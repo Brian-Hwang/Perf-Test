@@ -1,0 +1,49 @@
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=read --threads=1 run
+4721.73
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=read --threads=8 run
+19530.63
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=read --threads=16 run
+31651.73
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=read --threads=32 run
+38689.56
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=write --threads=1 run
+4085.61
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=write --threads=8 run
+3134.53
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=write --threads=16 run
+3889.59
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=1G --memory-oper=write --threads=32 run
+4267.16
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=read --threads=1 run
+5902.42
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=read --threads=8 run
+33447.51
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=read --threads=16 run
+61337.09
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=read --threads=32 run
+114471.3
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=write --threads=1 run
+4502.71
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=write --threads=8 run
+5150.33
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=write --threads=16 run
+8200.96
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=10G --memory-oper=write --threads=32 run
+10368.94
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=read --threads=1 run
+8067.46
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=read --threads=8 run
+39248.93
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=read --threads=16 run
+72466.87
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=read --threads=32 run
+126947.46
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=write --threads=1 run
+6779.4
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=write --threads=8 run
+5073.62
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=write --threads=16 run
+5889.51
+sudo sysbench memory --memory-block-size=1K --memory-scope=global --memory-total-size=100G --memory-oper=write --threads=32 run
+7604.05
+Results saved to sysbench_results.csv
